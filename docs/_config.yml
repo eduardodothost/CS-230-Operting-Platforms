@@ -18,16 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Test
-email: your-email@example.com
+title: CS 230 Operating Platforms
+email: eduardo@eduardo.host
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ The course had us contribute to a software design description based on some starter code that we had to refactor
+ to align it with the client's request. Being an open ended assignment; I figured it'd be best to presume that the client was
+ willing to work with a platform like unity to make their code more platform agnostic and ready to be deployed where the market takes them. 
+ The course made me appreciate how engineers have to choose the right tool for the job. The course had us work with APIs using DropWizard and learning how to orchestrate 
+ build using Maven. It was an excellent pairing with CS320, Software Testing and Quality Assurance; and is making an awesome segue into the next term's coursework in Software
+ Security.
+
 baseurl: "/CS-230-Operting-Platforms" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+domain: eduardodothost.github.io
+url: https://eduardodothost.github.io/CS-230-Operting-Platforms/ # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: eduardodothost
+github_username:  eduardodothost
 
 # Build settings
 theme: minima
