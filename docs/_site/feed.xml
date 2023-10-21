@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-21T10:15:39-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CS 320 Operating Platforms</title><subtitle>Operating Platforms was a simulated learning environment where the class worked out a  software design description to pair with the prototype and demo code they where given to refactor based on the client&apos;s requirements.</subtitle><entry><title type="html">Software Development Description</title><link href="http://localhost:4000/migrating-from-android-to-the-browser/2023/10/20/Software-Design-Description.html" rel="alternate" type="text/html" title="Software Development Description" /><published>2023-10-20T07:05:52-04:00</published><updated>2023-10-20T07:05:52-04:00</updated><id>http://localhost:4000/migrating-from-android-to-the-browser/2023/10/20/Software-Design-Description</id><content type="html" xml:base="http://localhost:4000/migrating-from-android-to-the-browser/2023/10/20/Software-Design-Description.html">&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;content-type&quot; /&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        ol.lst-kix_ghkb56u1vlau-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-0.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-0 0
+        }
+
+        ol.lst-kix_8do6de2q8u72-2.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-2 0
+        }
+
+        ol.lst-kix_ghkb56u1vlau-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rgc1p9b91zda-1.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-1 0
+        }
+
+        ol.lst-kix_c4hrvbq9y393-5.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-5 0
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-8.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-8 0
+        }
+
+        .lst-kix_ghkb56u1vlau-7&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-7
+        }
+
+        .lst-kix_416vc7fm1uyn-3&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-3
+        }
+
+        ol.lst-kix_rgc1p9b91zda-7.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-7 0
+        }
+
+        .lst-kix_rgc1p9b91zda-3&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-3
+        }
+
+        ol.lst-kix_416vc7fm1uyn-7.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-7 0
+        }
+
+        ol.lst-kix_8do6de2q8u72-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_c4hrvbq9y393-8&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-8
+        }
+
+        ol.lst-kix_8do6de2q8u72-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_ghkb56u1vlau-6.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-6 0
+        }
+
+        ol.lst-kix_416vc7fm1uyn-8.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-8 0
+        }
+
+        ol.lst-kix_8do6de2q8u72-7.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-7 0
+        }
+
+        .lst-kix_vpykgtnd3xx3-7&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-7
+        }
+
+        .lst-kix_416vc7fm1uyn-7&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-7
+        }
+
+        .lst-kix_c4hrvbq9y393-7&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-7, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_416vc7fm1uyn-1&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-1
+        }
+
+        .lst-kix_c4hrvbq9y393-8&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-8, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-3&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-3, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-1&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-1, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-5&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-5, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-2&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-2, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-6&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-6, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-3&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-3
+        }
+
+        ol.lst-kix_rgc1p9b91zda-2.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-2 0
+        }
+
+        .lst-kix_c4hrvbq9y393-3&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-3
+        }
+
+        .lst-kix_c4hrvbq9y393-4&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-4, lower-latin) &quot;. &quot;
+        }
+
+        ol.lst-kix_416vc7fm1uyn-2.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-2 0
+        }
+
+        ol.lst-kix_ghkb56u1vlau-1.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-1 0
+        }
+
+        ol.lst-kix_c4hrvbq9y393-4.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-4 0
+        }
+
+        .lst-kix_ghkb56u1vlau-5&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-5
+        }
+
+        .lst-kix_c4hrvbq9y393-0&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_c4hrvbq9y393-0, decimal) &quot;. &quot;
+        }
+
+        ol.lst-kix_rgc1p9b91zda-8.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-8 0
+        }
+
+        .lst-kix_rgc1p9b91zda-5&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-5
+        }
+
+        ol.lst-kix_ghkb56u1vlau-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_vpykgtnd3xx3-2&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-2, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_vpykgtnd3xx3-4&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-4, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_vpykgtnd3xx3-4&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-4
+        }
+
+        .lst-kix_vpykgtnd3xx3-8&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-8, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_vpykgtnd3xx3-3&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-3
+        }
+
+        .lst-kix_vpykgtnd3xx3-6&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-6, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-6&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-6
+        }
+
+        ol.lst-kix_rgc1p9b91zda-0.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-0 3
+        }
+
+        .lst-kix_416vc7fm1uyn-6&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-6, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-7&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-7, lower-latin) &quot;. &quot;
+        }
+
+        ol.lst-kix_rgc1p9b91zda-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rgc1p9b91zda-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rgc1p9b91zda-6 {
+            list-style-type: none
+        }
+
+        .lst-kix_416vc7fm1uyn-4&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-4, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_416vc7fm1uyn-8&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-8, lower-roman) &quot;. &quot;
+        }
+
+        ol.lst-kix_rgc1p9b91zda-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-6.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-6 0
+        }
+
+        ol.lst-kix_rgc1p9b91zda-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-7.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-7 0
+        }
+
+        ol.lst-kix_rgc1p9b91zda-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rgc1p9b91zda-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rgc1p9b91zda-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_rgc1p9b91zda-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_8do6de2q8u72-5&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-5
+        }
+
+        .lst-kix_vpykgtnd3xx3-2&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-2
+        }
+
+        .lst-kix_ghkb56u1vlau-3&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-3
+        }
+
+        ol.lst-kix_416vc7fm1uyn-1.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-1 0
+        }
+
+        ol.lst-kix_c4hrvbq9y393-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-2 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-0 {
+            list-style-type: none
+        }
+
+        .lst-kix_c4hrvbq9y393-7&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-7
+        }
+
+        .lst-kix_416vc7fm1uyn-0&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-0, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-4&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-4
+        }
+
+        .lst-kix_ghkb56u1vlau-7&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-7, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_416vc7fm1uyn-2&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-2, lower-roman) &quot;. &quot;
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-8.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-8 0
+        }
+
+        ol.lst-kix_416vc7fm1uyn-0.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-0 1
+        }
+
+        .lst-kix_c4hrvbq9y393-1&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-1
+        }
+
+        ol.lst-kix_c4hrvbq9y393-7.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-7 0
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_416vc7fm1uyn-2&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-2
+        }
+
+        ol.lst-kix_c4hrvbq9y393-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-1 {
+            list-style-type: none
+        }
+
+        .lst-kix_416vc7fm1uyn-8&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-8
+        }
+
+        .lst-kix_8do6de2q8u72-4&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-4
+        }
+
+        ol.lst-kix_c4hrvbq9y393-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-4 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-8 {
+            list-style-type: none
+        }
+
+        .lst-kix_416vc7fm1uyn-4&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-4
+        }
+
+        ol.lst-kix_8do6de2q8u72-5.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-5 0
+        }
+
+        .lst-kix_rgc1p9b91zda-6&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-6, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-0&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-0
+        }
+
+        .lst-kix_rgc1p9b91zda-4&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-4
+        }
+
+        ol.lst-kix_c4hrvbq9y393-8.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-8 0
+        }
+
+        .lst-kix_rgc1p9b91zda-5&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-5, lower-roman) &quot;. &quot;
+        }
+
+        ol.lst-kix_rgc1p9b91zda-4.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-4 0
+        }
+
+        .lst-kix_rgc1p9b91zda-4&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-4, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_c4hrvbq9y393-0&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-0
+        }
+
+        .lst-kix_rgc1p9b91zda-1&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-1, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_rgc1p9b91zda-3&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-3, decimal) &quot;. &quot;
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-0.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-0 2
+        }
+
+        .lst-kix_rgc1p9b91zda-2&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-2, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-0&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-0, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-2&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-2, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-3&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-3, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-2&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-2
+        }
+
+        .lst-kix_ghkb56u1vlau-4&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-4, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-6&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-6, decimal) &quot;. &quot;
+        }
+
+        ol.lst-kix_416vc7fm1uyn-4.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-4 0
+        }
+
+        .lst-kix_rgc1p9b91zda-6&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-6
+        }
+
+        .lst-kix_ghkb56u1vlau-5&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-5, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_rgc1p9b91zda-7&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-7, lower-latin) &quot;. &quot;
+        }
+
+        ol.lst-kix_ghkb56u1vlau-3.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-3 0
+        }
+
+        .lst-kix_rgc1p9b91zda-8&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-8, lower-roman) &quot;. &quot;
+        }
+
+        ol.lst-kix_c4hrvbq9y393-2.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-2 0
+        }
+
+        .lst-kix_ghkb56u1vlau-6&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-6
+        }
+
+        .lst-kix_vpykgtnd3xx3-8&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-8
+        }
+
+        .lst-kix_ghkb56u1vlau-1&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-1, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_vpykgtnd3xx3-1&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-1
+        }
+
+        ol.lst-kix_416vc7fm1uyn-1 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_416vc7fm1uyn-0 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_8do6de2q8u72-0.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-0 5
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-6.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-6 0
+        }
+
+        ol.lst-kix_416vc7fm1uyn-5 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_416vc7fm1uyn-4 {
+            list-style-type: none
+        }
+
+        .lst-kix_c4hrvbq9y393-2&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-2
+        }
+
+        ol.lst-kix_416vc7fm1uyn-3 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_416vc7fm1uyn-2 {
+            list-style-type: none
+        }
+
+        .lst-kix_416vc7fm1uyn-6&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-6
+        }
+
+        ol.lst-kix_416vc7fm1uyn-8 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_416vc7fm1uyn-7 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_416vc7fm1uyn-6 {
+            list-style-type: none
+        }
+
+        ol.lst-kix_c4hrvbq9y393-3.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-3 0
+        }
+
+        ol.lst-kix_ghkb56u1vlau-2.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-2 0
+        }
+
+        .lst-kix_416vc7fm1uyn-0&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-0
+        }
+
+        .lst-kix_8do6de2q8u72-5&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-5, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-6&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-6, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-2&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-2
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-5.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-5 0
+        }
+
+        .lst-kix_ghkb56u1vlau-8&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-8
+        }
+
+        .lst-kix_8do6de2q8u72-4&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-4, lower-latin) &quot;. &quot;
+        }
+
+        ol.lst-kix_8do6de2q8u72-6.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-6 0
+        }
+
+        .lst-kix_8do6de2q8u72-3&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-3, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-1&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-1, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-2&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-2, lower-roman) &quot;. &quot;
+        }
+
+        ol.lst-kix_ghkb56u1vlau-8.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-8 0
+        }
+
+        .lst-kix_8do6de2q8u72-0&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-0, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_rgc1p9b91zda-8&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-8
+        }
+
+        .lst-kix_rgc1p9b91zda-2&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-2
+        }
+
+        .lst-kix_vpykgtnd3xx3-0&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-0, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_vpykgtnd3xx3-1&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-1, lower-latin) &quot;. &quot;
+        }
+
+        ol.lst-kix_ghkb56u1vlau-7.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-7 0
+        }
+
+        ol.lst-kix_416vc7fm1uyn-3.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-3 0
+        }
+
+        .lst-kix_c4hrvbq9y393-5&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-5
+        }
+
+        .lst-kix_vpykgtnd3xx3-3&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-3, decimal) &quot;. &quot;
+        }
+
+        .lst-kix_vpykgtnd3xx3-5&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-5, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_ghkb56u1vlau-0&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-0
+        }
+
+        .lst-kix_vpykgtnd3xx3-7&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_vpykgtnd3xx3-7, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-6&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-6
+        }
+
+        .lst-kix_rgc1p9b91zda-0&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-0
+        }
+
+        .lst-kix_ghkb56u1vlau-1&gt;li {
+            counter-increment: lst-ctn-kix_ghkb56u1vlau-1
+        }
+
+        ol.lst-kix_8do6de2q8u72-1.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-1 0
+        }
+
+        .lst-kix_416vc7fm1uyn-5&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-5, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_416vc7fm1uyn-7&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-7, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_8do6de2q8u72-8&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-8
+        }
+
+        .lst-kix_8do6de2q8u72-8&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_8do6de2q8u72-8, lower-roman) &quot;. &quot;
+        }
+
+        ol.lst-kix_rgc1p9b91zda-3.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-3 0
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-1.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-1 0
+        }
+
+        ol.lst-kix_8do6de2q8u72-4.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-4 0
+        }
+
+        .lst-kix_vpykgtnd3xx3-5&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-5
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-4.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-4 0
+        }
+
+        ol.lst-kix_rgc1p9b91zda-6.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-6 0
+        }
+
+        ol.lst-kix_c4hrvbq9y393-0.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-0 4
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-2.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-2 0
+        }
+
+        .lst-kix_rgc1p9b91zda-1&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-1
+        }
+
+        .lst-kix_ghkb56u1vlau-8&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_ghkb56u1vlau-8, lower-roman) &quot;. &quot;
+        }
+
+        .lst-kix_rgc1p9b91zda-7&gt;li {
+            counter-increment: lst-ctn-kix_rgc1p9b91zda-7
+        }
+
+        .lst-kix_vpykgtnd3xx3-6&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-6
+        }
+
+        ol.lst-kix_ghkb56u1vlau-5.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-5 0
+        }
+
+        ol.lst-kix_416vc7fm1uyn-5.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-5 0
+        }
+
+        .lst-kix_416vc7fm1uyn-1&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-1, lower-latin) &quot;. &quot;
+        }
+
+        .lst-kix_416vc7fm1uyn-3&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_416vc7fm1uyn-3, decimal) &quot;. &quot;
+        }
+
+        ol.lst-kix_8do6de2q8u72-3.start {
+            counter-reset: lst-ctn-kix_8do6de2q8u72-3 0
+        }
+
+        .lst-kix_vpykgtnd3xx3-0&gt;li {
+            counter-increment: lst-ctn-kix_vpykgtnd3xx3-0
+        }
+
+        .lst-kix_rgc1p9b91zda-0&gt;li:before {
+            content: &quot;&quot; counter(lst-ctn-kix_rgc1p9b91zda-0, decimal) &quot;. &quot;
+        }
+
+        ol.lst-kix_vpykgtnd3xx3-3.start {
+            counter-reset: lst-ctn-kix_vpykgtnd3xx3-3 0
+        }
+
+        li.li-bullet-0:before {
+            margin-left: -18pt;
+            white-space: nowrap;
+            display: inline-block;
+            min-width: 18pt
+        }
+
+        ol.lst-kix_rgc1p9b91zda-5.start {
+            counter-reset: lst-ctn-kix_rgc1p9b91zda-5 0
+        }
+
+        ol.lst-kix_c4hrvbq9y393-1.start {
+            counter-reset: lst-ctn-kix_c4hrvbq9y393-1 0
+        }
+
+        .lst-kix_c4hrvbq9y393-4&gt;li {
+            counter-increment: lst-ctn-kix_c4hrvbq9y393-4
+        }
+
+        ol.lst-kix_ghkb56u1vlau-4.start {
+            counter-reset: lst-ctn-kix_ghkb56u1vlau-4 0
+        }
+
+        .lst-kix_8do6de2q8u72-7&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-7
+        }
+
+        .lst-kix_416vc7fm1uyn-5&gt;li {
+            counter-increment: lst-ctn-kix_416vc7fm1uyn-5
+        }
+
+        ol.lst-kix_416vc7fm1uyn-6.start {
+            counter-reset: lst-ctn-kix_416vc7fm1uyn-6 0
+        }
+
+        .lst-kix_8do6de2q8u72-1&gt;li {
+            counter-increment: lst-ctn-kix_8do6de2q8u72-1
+        }
+
+        ol {
+            margin: 0;
+            padding: 0
+        }
+
+        table td,
+        table th {
+            padding: 0
+        }
+
+        .c3 {
+            border-right-style: solid;
+            padding-top: 0pt;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #ffffff;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            border-bottom-style: solid;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            padding-right: 0pt
+        }
+
+        .c4 {
+            border-right-style: solid;
+            padding-top: 0pt;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            margin-left: -4pt;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            border-bottom-style: solid;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            padding-right: 0pt
+        }
+
+        .c27 {
+            border-right-style: solid;
+            padding-top: 0pt;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            margin-left: -4pt;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            border-bottom-style: solid;
+            orphans: 2;
+            widows: 2;
+            text-align: center;
+            padding-right: 0pt
+        }
+
+        .c24 {
+            border-right-style: solid;
+            padding-top: 0pt;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            border-left-width: 0pt;
+            border-top-style: solid;
+            background-color: #ffffff;
+            border-left-style: solid;
+            border-bottom-width: 0pt;
+            border-bottom-style: solid;
+            orphans: 2;
+            widows: 2;
+            text-align: center;
+            padding-right: 0pt
+        }
+
+        .c13 {
+            border-right-style: solid;
+            padding-top: 0pt;
+            border-top-width: 0pt;
+            border-right-width: 0pt;
+            padding-left: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            border-top-style: solid;
+            margin-left: 54pt;
+            border-bottom-width: 0pt;
+            border-bottom-style: solid;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            padding-right: 0pt
+        }
+
+        .c7 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 94.6pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c1 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 392pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c23 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 94.6pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c15 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 49.4pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c21 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 77.1pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c30 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 86.1pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c11 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 76pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c8 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 103.6pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c22 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 255.3pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c36 {
+            border-right-style: solid;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 99.1pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c12 {
+            margin-left: -4pt;
+            padding-top: 2pt;
+            padding-bottom: 2pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c19 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c33 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: &quot;Times New Roman&quot;;
+            font-style: normal
+        }
+
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: &quot;Arial&quot;;
+            font-style: normal
+        }
+
+        .c34 {
+            color: #2f5496;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: &quot;Arial&quot;;
+            font-style: normal
+        }
+
+        .c20 {
+            color: #000000;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: &quot;Arial&quot;;
+            font-style: normal
+        }
+
+        .c2 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            color: #0000ff;
+            font-weight: 700;
+            text-decoration: underline
+        }
+
+        .c25 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c17 {
+            background-color: #e1e3e6;
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            text-decoration: underline
+        }
+
+        .c18 {
+            text-decoration-skip-ink: none;
+            -webkit-text-decoration-skip: none;
+            text-decoration: underline
+        }
+
+        .c32 {
+            background-color: #ffffff;
+            max-width: 468pt;
+            padding: 72pt 72pt 72pt 72pt
+        }
+
+        .c14 {
+            padding: 0;
+            margin: 0
+        }
+
+        .c29 {
+            height: 59.2pt
+        }
+
+        .c28 {
+            height: 44.2pt
+        }
+
+        .c10 {
+            height: 73.5pt
+        }
+
+        .c6 {
+            margin-left: 11pt
+        }
+
+        .c9 {
+            font-weight: 700
+        }
+
+        .c37 {
+            height: 15pt
+        }
+
+        .c5 {
+            font-style: italic
+        }
+
+        .c31 {
+            padding: 5pt 5pt 5pt 5pt
+        }
+
+        .c26 {
+            margin-left: 36pt
+        }
+
+        .c16 {
+            margin-left: 18pt
+        }
+
+        .c35 {
+            height: 30pt
+        }
+
+        .title {
+            padding-top: 0pt;
+            color: #000000;
+            font-size: 26pt;
+            padding-bottom: 3pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        .subtitle {
+            padding-top: 0pt;
+            color: #666666;
+            font-size: 15pt;
+            padding-bottom: 16pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        li {
+            color: #000000;
+            font-size: 11pt;
+            font-family: &quot;Arial&quot;
+        }
+
+        p {
+            margin: 0;
+            color: #000000;
+            font-size: 11pt;
+            font-family: &quot;Arial&quot;
+        }
+
+        h1 {
+            padding-top: 20pt;
+            color: #000000;
+            font-size: 20pt;
+            padding-bottom: 6pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h2 {
+            padding-top: 18pt;
+            color: #000000;
+            font-size: 16pt;
+            padding-bottom: 6pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h3 {
+            padding-top: 16pt;
+            color: #434343;
+            font-size: 14pt;
+            padding-bottom: 4pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h4 {
+            padding-top: 14pt;
+            color: #666666;
+            font-size: 12pt;
+            padding-bottom: 4pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h5 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+
+        h6 {
+            padding-top: 12pt;
+            color: #666666;
+            font-size: 11pt;
+            padding-bottom: 4pt;
+            font-family: &quot;Arial&quot;;
+            line-height: 1.15;
+            page-break-after: avoid;
+            font-style: italic;
+            orphans: 2;
+            widows: 2;
+            text-align: left
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class=&quot;c32 doc-content&quot;&gt;
+    &lt;p class=&quot;c24&quot;&gt;&lt;span style=&quot;overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 533.33px; height: 294.67px;&quot;&gt;&lt;img alt=&quot;The Gaming Room logo&quot; src=&quot;images/image1.png&quot; style=&quot;width: 533.33px; height: 294.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);&quot; title=&quot;&quot; /&gt;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c24&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Draw It or Lose It &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c24&quot;&gt;&lt;span class=&quot;c9&quot;&gt;CS 230 Project Software Design Template&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c24&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Version 1.0 &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c20 c9&quot;&gt;Table of Contents &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c24&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span&gt;&amp;#8203;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c33&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c6&quot;&gt;&lt;span class=&quot;c2&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3 c16&quot;&gt;&lt;span class=&quot;c9 c18&quot;&gt;&amp;#8203;&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;#8203; &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c17 c9&quot;&gt;Document Revision History&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;a id=&quot;t.bccbb9dd42e9f848cea7d8fce56a6d8304271904&quot;&gt;&lt;/a&gt;&lt;a id=&quot;t.0&quot;&gt;&lt;/a&gt;
+    &lt;table class=&quot;c25&quot;&gt;
+        &lt;tr class=&quot;c37&quot;&gt;
+            &lt;td class=&quot;c15&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Version &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c21&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Date &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c30&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Author &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c22&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Comments &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;c35&quot;&gt;
+            &lt;td class=&quot;c15&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c27&quot;&gt;&lt;span class=&quot;c0&quot;&gt;1.0 &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c21&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;09/10/2023 &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c30&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Eduardo Rodrigues &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c22&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Domain Model &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;c35&quot;&gt;
+            &lt;td class=&quot;c15&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c27&quot;&gt;&lt;span class=&quot;c0&quot;&gt;2.0 &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c21&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;10/15/2023 &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c30&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Eduardo Rodrigues &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c22&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Deployment Recommendations &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Instructions &lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Fill in all bracketed information on page one (the cover page), in the Document
+            Revision History table, and below each header. Under each header, remove the bracketed prompt and write your
+            own paragraph response covering the indicated information.&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c34&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c17 c9&quot;&gt;Executive Summary&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;The development team at, &amp;quot;The Gaming Room,&amp;rdquo; request consultation on the
+            prototype to be used in the formation of a real-time multiplayer game for their game, titled, &amp;quot;Draw It
+            of Loose It&amp;rdquo;. &amp;nbsp;Our goal will be to shorten the time to deployment and give the client a plethora
+            of hosting and platform options backed by support they can rely on with Unities Game development platform.
+        &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c18 c9&quot;&gt;Requirements&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c5&quot;&gt;The prototype will include a single service that draws from three types of resource
+            containers to scale and manage a system of game generation that features a multitude of configurable and
+            uniquely identifiable team and player options.&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c18 c9&quot;&gt;Design Constraints&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;The demo code in Java will be translated to the C# that is ubiquitous throughout
+            Unity. The platform gives the client access to the various assets, networking, industry specific tools and
+            support to get a game up and running for multiple platforms dependent on the client&amp;#39;s choice of hosting
+            and/or publishing option(s). &amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c18 c9&quot;&gt;System Architecture View&lt;/span&gt;&lt;span class=&quot;c9 c20&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c5&quot;&gt;Use of Unity will help us flesh out the remaining interfaces of our system, they even
+            have completely automated deployment pipelines and services in place depending on the client&amp;rsquo;s
+            specifications. Our refactored code can be easily adapted to include new features required by a growing
+            system.&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c9 c17&quot;&gt;Domain Model&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;The diagram below shows us our service, GameService , that can be uniquely
+            instantiated by the select entry point, by ProgramDriver or SingletonTester. GameService can then be scaled
+            with various configurations of Game, Team, and Player entities &amp;ndash; where GameService houses Game
+            instances and each subsequent entity houses the next entity over, Player being the lowest denomination of
+            the configurables. Having the base class entity here lets us easily enhance the GameService resources to
+            meet any sort of requirements that are needed with the addition of new interfaces. &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span style=&quot;overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 314.67px;&quot;&gt;&lt;img alt=&quot;&amp;quot;The Gaming Room UML diagram. The top of the diagram is labeled as com dot gamingroom. Test boxes are placed in two layers. The first layer has three text boxes and the second layer has four of them. In the first layer, the &amp;#39;ProgramDriver&amp;#39; textbox points to &amp;#39;SingletonTester&amp;#39; textbox. The &amp;#39;ProgramDriver&amp;#39; textbox contains the text &amp;#39;asterisk main round brackets.&amp;#39; The &amp;#39;SingletonTester&amp;#39; textbox contains the text &amp;#39;asterisk testSingleton round brackets.&amp;#39; The arrow between these two text boxes are labeled &amp;#39;open two angle brackets uses close two angle brackets&amp;#39;. In the second layer, there are &amp;#39;GameService&amp;#39;, &amp;#39;Game&amp;#39;, &amp;#39;Team&amp;#39;, and &amp;#39;Player&amp;#39; text boxes. The &amp;#39;GameService&amp;#39; textbox has texts arranged in two layers. The first layer contains games colon List open angle bracket Game close angle bracket, nextGamesId colon long, nextPlayer Id colon long, nextTeamId colon long, and service colon GameService. The second layer contains GameService round brackets, getinstance round brackets colon GameService, addGame open parenthesis name colon String close parenthesis colon Game, getGame open parenthesis id colon long close open parenthesis colon Game, getGame open open parenthesis name colon String close open parenthesis colon Game, getGameCount round brackets colon int, getNextPlayerID round brackets colon long, and getNextTeamId round brackets colon long. The &amp;#39;GameService&amp;#39; box is connected with the &amp;#39;Game&amp;#39; textbox with a line labeled &amp;#39;zero dot dt dot asterisk&amp;#39;.  The &amp;#39;Game&amp;#39; textbox also contains text in two layers. The first layers contains the text teams colon List open angle bracket Team close angle bracket. The second layer has Game open round bracket id colon long comma name colon String close parenthesis, addTeam open parenthesis name colon String close parenthesis Team, toString round brackets colon String. The &amp;#39;Game&amp;#39; textbox is connected with the &amp;#39;Team&amp;#39; textbox with a line labeled &amp;#39;zero dot dt dot asterisk&amp;#39;. The &amp;#39;Team&amp;#39; textbox also contains text in two layers. The first layers contains the text players colon List open angle bracket Player close angle bracket. The second layer has Team open parenthesis id colon long comma name colon String close parenthesis, addPlayer open parenthesis name colon String close parenthesis colon Player, and toString round brackets colon String. The &amp;#39;Team&amp;#39; textbox is connected with the &amp;#39;Player&amp;#39; textbox with a line labeled &amp;#39;zero dot dt dot asterisk&amp;#39;. It contains the text Player open parenthesis id colon long comma name colon String close parenthesis and toString round brackets colon String. The &amp;#39;Game&amp;#39;, the &amp;#39;Team, and the &amp;#39;Player&amp;#39; boxes point to the &amp;#39;Entity&amp;#39; textbox in first layer. The &amp;#39;Entity&amp;#39; textbox contains text in two layers. The first layer has the text id colon long and name colon String. The second layer has Entity round brackets, Entity open parenthesis id colon long comma name colon String close parenthesis, getId round brackets colon long, getName round brackets colon String, toString round brackets colon String.&quot; src=&quot;images/image2.jpg&quot; style=&quot;width: 624.00px; height: 314.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);&quot; title=&quot;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c17 c9&quot;&gt;Evaluation&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Using your experience to evaluate the characteristics, advantages, and weaknesses of
+            each operating platform (Linux, Mac, and Windows) as well as mobile devices, consider the requirements
+            outlined below and articulate your findings for each. As you complete the table, keep in mind your
+            client&amp;rsquo;s requirements and look at the situation holistically, as it all must work together.
+            &amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;In each cell, remove the bracketed prompt and write your own paragraph response
+            covering the indicated information. &amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;a id=&quot;t.68e8305b304c158e137901e0e1cdca6b0dcd39c7&quot;&gt;&lt;/a&gt;&lt;a id=&quot;t.1&quot;&gt;&lt;/a&gt;
+    &lt;table class=&quot;c25&quot;&gt;
+        &lt;tr class=&quot;c28&quot;&gt;
+            &lt;td class=&quot;c11&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Development Requirements&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c36&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Mac&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c23&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Linux&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c23&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Windows&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c8&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Mobile Devices&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;c10&quot;&gt;
+            &lt;td class=&quot;c11&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Server Side&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c1&quot; colspan=&quot;4&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Unity offers several multiplatform hosting options. The hardware in play
+                        will have a server that needs to be configured to be able to deliver the game to various browser
+                        versions. Unity is royalty free, but charges for by the seat for professional projects. Unreal
+                        uses a royalties-based compensation and may have pricing for their hosting options that are
+                        comparable to those used by Unity. &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;c28&quot;&gt;
+            &lt;td class=&quot;c11&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Client Side&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c1&quot; colspan=&quot;4&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Given that the game mechanics lend themselves to using a cursor and
+                        keyboard &amp;ndash; developing for the browser is a good option to reach a wider range of users,
+                        although unity does offer several multiplatform options. &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;c29&quot;&gt;
+            &lt;td class=&quot;c11&quot; colspan=&quot;1&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Development Tools&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+            &lt;td class=&quot;c1&quot; colspan=&quot;4&quot; rowspan=&quot;1&quot;&gt;
+                &lt;p class=&quot;c4&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Unity hub is available for Windows, Mac, and Linux. There is also a
+                        complete development and hosting pipeline in place with various publishing options. A tool like
+                        Maven can be used to orchestrate the entire project management and development pipeline and
+                        more. &lt;/span&gt;&lt;/p&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c18 c9&quot;&gt;Recommendations&lt;/span&gt;&lt;span class=&quot;c20 c9&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;Analyze the characteristics of and techniques specific to various systems
+            architectures and make a recommendation to The Gaming Room. Specifically, address the following: &lt;/span&gt;&lt;/p&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol class=&quot;c14 lst-kix_ghkb56u1vlau-0 start&quot; start=&quot;1&quot;&gt;
+        &lt;li class=&quot;c13 li-bullet-0&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Operating Platform&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;: Unity offers a complete
+                development and deployment package. Unreal Engine is equivocal and bolsters a higher caliber graphics
+                engine. We can easily translate the Android game to be able to run as an HTML5 game using Unities API.
+            &lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p class=&quot;c3 c26&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol class=&quot;c14 lst-kix_416vc7fm1uyn-0 start&quot; start=&quot;2&quot;&gt;
+        &lt;li class=&quot;c13 li-bullet-0&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Operating Systems Architectures&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;: Unity and
+                Unreal can target multiple platforms. They also have a pipeline in place that will facilitate the design
+                of an application that is usable in the client-side browser. Developers and the like have options to
+                develop on their platform of choice. A deployment on a Linux virtual instance will bolster the most
+                efficiency because this is not an enterprise application. This will not only cost less but scale and
+                provide more flexibility with development, deployment, and maintenance. &lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol class=&quot;c14 lst-kix_vpykgtnd3xx3-0 start&quot; start=&quot;3&quot;&gt;
+        &lt;li class=&quot;c13 li-bullet-0&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Storage Management&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;: Both companies cater to
+                industry specific data warehousing needs and requirements for AAA Game titles, the film and music
+                industry, and in Graphics simulations. This will be necessary for storage of the images used for teams
+                to interpret. This is all dependent on the remote hosting option and how the deployment is planned out.
+            &lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol class=&quot;c14 lst-kix_rgc1p9b91zda-0 start&quot; start=&quot;4&quot;&gt;
+        &lt;li class=&quot;c13 li-bullet-0&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Memory Management&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;: The DevOps platforms in
+                play from either platform will allow the client to test and scale the system to be able to meet the
+                projected load balance on the server. Unity provides various tooling that will help facilitate modeling
+                runtime analysis and simulations of deployments during alpha and beta testing and beyond. &lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p class=&quot;c3&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol class=&quot;c14 lst-kix_c4hrvbq9y393-0 start&quot; start=&quot;5&quot;&gt;
+        &lt;li class=&quot;c13 li-bullet-0&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Distributed Systems and Networks&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;: Using
+                WebGL and HTML5 based multiplayer browser game lends itself to the use of the client/server model where
+                various channels open between client browsers and the server holding the game. The vendors may be able
+                to provide the telemetry and marketing data needed to distribute, monitor, and adapt the schema to
+                optimize the user base. Emerging techniques at the edge can also be considered for efficiency and time
+                to market. &lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p class=&quot;c3 c26&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+    &lt;ol class=&quot;c14 lst-kix_8do6de2q8u72-0 start&quot; start=&quot;6&quot;&gt;
+        &lt;li class=&quot;c13 li-bullet-0&quot;&gt;&lt;span class=&quot;c9&quot;&gt;Security&lt;/span&gt;&lt;span class=&quot;c0&quot;&gt;: Both vendors have security
+                options outlined for various deployment types and publishing needs. This is especially important for the
+                development pipeline and within the networking library used for multiplayer assets. Hosting options will
+                provide specific networking security features like external firewall and virtual machine hardening
+                guides. &lt;/span&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p class=&quot;c19&quot;&gt;&lt;span class=&quot;c0&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</content><author><name></name></author><category term="Migrating-from-Android-to-the-Browser" /><summary type="html"></summary></entry></feed>
