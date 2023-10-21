@@ -24,9 +24,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Operating Platforms was a simulated learning environment where the class worked out a 
   software design description to pair with the prototype and demo code they where given to refactor
   based on the client's requirements.
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+domain: eduardodothost.github.io
+baseurl: /CS-230-Operting-Platforms/ # the subpath of your site, e.g. /blog
+url: eduardodothost.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: eduardodothost
 github_username:  eduardodothost
 
