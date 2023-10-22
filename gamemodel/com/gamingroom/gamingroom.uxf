@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>40</y>
+      <w>390</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom::GameService
+--
+-games = new ArrayList&lt;Game&gt;(): List&lt;Game&gt;
+-nextGameId = 1: long
+-GameServiceInstance = new GameService(): GameService
+--
+-GameService(): ctor
++getGameServiceInstance(): GameService
++addGame(String name): Game
+~getGame(int index): Game
++getGame(long id): Game
++getGame(String name): Game
++getGameCount(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>60</y>
+      <w>230</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom::Game
+--
+~id: long
+~name: String
+--
+-Game(): ctor
++Game(long id, String name): ctor
++getId(): long
++getName(): String
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>300</y>
+      <w>230</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom::Player
+--
+~id: long
+~name: String
+--
++Player(long id, String name): ctor
++getId(): long
++getName(): String
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>300</y>
+      <w>230</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom::Team
+--
+~id: long
+~name: String
+--
++Team(long id, String name): ctor
++getId(): long
++getName(): String
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>480</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom::ProgramDriver
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>490</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom::SingletonTester
+--
+--
++testSingleton(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>750</w>
+      <h>590</h>
+    </coordinates>
+    <panel_attributes>com.gamingroom
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>100</y>
+      <w>90</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m2=0..*
+</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>490</y>
+      <w>100</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+uses </panel_attributes>
+    <additional_attributes>10.0;20.0;80.0;20.0</additional_attributes>
+  </element>
+</diagram>
